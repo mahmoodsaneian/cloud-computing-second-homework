@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: app-config
+  namespace: demo-ns
+data:
+  CACHE_TIME: "30000"
+  REDIS_HOST: "redis-service"
+  REDIS_PORT: "6379"
+  CACHE_TYPE: "redis"

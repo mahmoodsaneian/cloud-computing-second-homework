@@ -13,9 +13,4 @@ public class RestTemplateConfiguration {
     public RestTemplate restTemplate() {
         return new RestTemplate();
     }
-
-    @Bean
-    public CacheManager cacheManager() {
-        return new ConcurrentMapCacheManager();
-    }
 }
